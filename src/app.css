@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
 
+:root{
+    font-size: 12px;
+}
+
 body{
     font-family: 'Unica One';
     background-color: #0B001E;
@@ -18,4 +22,11 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 80%;
+}
+
+@media screen and (min-width: 480px){
+    :root{
+        font-size: 16px;
+    }
 }
