@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+body{
+    font-family: 'Unica One';
+    background-color: #0B001E;
+}
+
+.App{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

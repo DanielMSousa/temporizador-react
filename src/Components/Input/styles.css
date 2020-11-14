@@ -1,0 +1,22 @@
+.inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(155, 155, 155, 0.2);
+}
+
+input{
+    box-sizing: border-box;
+    background-color: transparent;
+    width: 200px;
+    outline: none;
+    border: none;
+    font-size: 6em;
+    color: #fff;
+    font-family: 'Unica One';
+    font-weight: bold;
+}
+
+.inputs input:first-of-type{
+    text-align: right;
+}
