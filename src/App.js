@@ -14,7 +14,11 @@ function App() {
     const minSecCopy = minSec;
     console.log(e.target.name);
     if(e.target.name === "min") setMinSec({min: Number(e.target.value), sec: minSecCopy.sec});
-    else setMinSec({sec: Number(e.target.value), min: minSecCopy.min});
+    else{
+      const sec = Number(e.target.value) > 59 ? Number(e.target.value) % 60 : Number(e.target.value);
+      const minPlus = Number(e.target.value) > 59 ? (Number(e.target.value)/60|0) : 0
+      setMinSec({sec: sec, min: minSecCopy.min + minPlus});
+    }
     console.log(minSec);
   }
 
